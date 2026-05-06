@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIRRA BOUQUET</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<!-- 🔥 BANNER BARU -->
+<div class="banner" onclick="cekPassword()">
+    <h1>ZIRRA BOUQUET</h1>
+    <p>Welcome to our store</p>
+</div>
+
+<a href="index.html" class="btn-kembali">← Kembali</a>
+
+<div class="container" id="container"></div>
+
+<button id="tambahProduk" class="btn-tambah">+ Produk</button>
+<button id="logoutAdmin" class="btn-logout">Keluar</button>
+
+<div id="formPopup" class="popup">
+    <div class="popup-content">
+        <h3>Produk</h3>
+
+        <input type="text" id="nama" placeholder="Nama Produk">
+        <input type="text" id="harga" placeholder="Harga (Rp)">
+        <input type="text" id="foto" placeholder="Link Foto">
+        <input type="number" id="stok" placeholder="Stok Produk">
+
+        <button onclick="simpanProduk()">Simpan</button>
+        <button onclick="tutupForm()">Batal</button>
+    </div>
+</div>
+
+<div id="waForm" class="popup">
+    <div class="popup-content">
+        <h3>Checkout Produk</h3>
+
+        <input type="text" id="wa_nama" placeholder="Nama Kamu">
+        <input type="number" id="wa_jumlah" placeholder="Jumlah">
+        <input type="text" id="wa_alamat" placeholder="Alamat">
+        <input type="date" id="wa_tanggal">
+        <input type="time" id="wa_jam">
+
+        <button onclick="kirimWA()">Kirim ke WhatsApp</button>
+        <button onclick="tutupWA()">Batal</button>
+    </div>
+</div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
